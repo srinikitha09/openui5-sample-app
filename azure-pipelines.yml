@@ -20,4 +20,4 @@ steps:
 - task: executePiperStep@0
   inputs:
     piperVersion: 'latest'
-    stepName: 'version'   
+    stepName: '--version'   
