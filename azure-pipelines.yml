@@ -20,4 +20,10 @@ steps:
 - task: executePiperStep@0
   inputs:
     piperVersion: 'latest'
+    dockerImage: 'devxci/mbtci:1.0.14.1'
+    stepName: 'mtaBuild'
+    flags: 'mtar'
+- task: executePiperStep@0
+  inputs:
+    piperVersion: 'latest'
     stepName: 'version'   
